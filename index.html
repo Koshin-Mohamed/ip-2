@@ -6,5 +6,24 @@
   </head>
   <body>
     <h1>Akan Name App</h1>
+    <form>
+      <label for="dob">Date of Birth</label>
+      <br />
+      <input
+        type="text"
+        name="dob"
+        id="dob"
+        placeholder="Please enter your date of birth"
+        required
+      />
+      <fieldset>
+        <legend>Choose your gender</legend>
+        <label for="male">Male</label>
+        <input type="radio" name="male" id="male" required />
+        <label for="female">Female</label>
+        <input type="radio" name="female" id="female" required />
+      </fieldset>
+      <input type="button" value="submit">
+    </form>
   </body>
 </html>
