@@ -43,9 +43,9 @@ function dow() {
     7;
 
   var date = new Date(getCC() + getYY() + "/" + getMM() + "/" + getDD());
-  var day = date.getDay();
+  var day = date.getDay(); 
 
-  
+
 }
 
 
