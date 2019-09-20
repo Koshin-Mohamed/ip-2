@@ -1,10 +1,8 @@
-// function date() {}
-
 function getDD() {
   var DD = document.getElementById("dob").value;
   return DD.slice(0, 2);
 }
-// DD is for the day of the month 
+// DD is for the day of the month
 
 function getMM() {
   var MM = document.getElementById("dob").value;
@@ -24,19 +22,25 @@ function getYY() {
 }
 // YY is for the year of the century
 
+function dow() {
+  var formula =
+    (getCC() / 4 -
+      2 * getCC() -
+      1 +
+      (5 * getYY()) / 4 +
+      (26 * (getMM() + 1)) / 10 +
+      getDD()) %
+    7;
+  var numDay = Math.floor(formula);
+  alert(numDay);
+}
+
+// Date of Week equation
+
 var male = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
 var female = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
 //Ghanaian names in order from Sunday to Saturday
 
-function dow() {
-  var formula =
-    (CC.slice(8) / 4 -
-      2 * CC.slice(8) -
-      1 +
-      (5 * YY.slice(8)) / 4 +
-      (26 * (MM.slice(3, 5) + 1)) / 10 +
-      DD.slice(0, 2)) %
-    7;
-  // Date of Week equation
-  alert(formula);
-}
+var gender = document.querySelector('input[name="gender"]:checked').value;
+
+// YY is for the year of the century
