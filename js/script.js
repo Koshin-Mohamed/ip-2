@@ -22,6 +22,16 @@ function getYY() {
 }
 // YY is for the year of the century
 
+var gender = document.querySelector('input[name="gender"]:checked').value;
+
+// YY is for the year of the century
+
+// Date of Week equation
+
+var male = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
+var female = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
+//Ghanaian names in order from Sunday to Saturday
+
 function dow() {
   var formula =
     (getCC() / 4 -
@@ -31,16 +41,13 @@ function dow() {
       (26 * (getMM() + 1)) / 10 +
       getDD()) %
     7;
-  var numDay = Math.floor(formula);
-  alert(numDay);
+
+  var date = new Date(getCC() + getYY() + "/" + getMM() + "/" + getDD());
+  var day = date.getDay();
+
+  
 }
 
-// Date of Week equation
 
-var male = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
-var female = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
-//Ghanaian names in order from Sunday to Saturday
 
-var gender = document.querySelector('input[name="gender"]:checked').value;
 
-// YY is for the year of the century
