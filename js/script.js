@@ -1,25 +1,26 @@
+// function date() {}
+
 function getDD() {
   var DD = document.getElementById("dob").value;
-  DD.slice(0, 2);
-  
+  return DD.slice(0, 2);
 }
-// DD is for the day of the month
+// DD is for the day of the month 
 
 function getMM() {
   var MM = document.getElementById("dob").value;
-  MM.slice(3, 5);
+  return MM.slice(3, 5);
 }
 // MM is for the month of the year
 
 function getCC() {
   var CC = document.getElementById("dob").value;
-  CC.slice(6, 8);
+  return CC.slice(6, 8);
 }
 // CC is for the century
 
 function getYY() {
   var YY = document.getElementById("dob").value;
-  CC.slice(8);
+  return YY.slice(8);
 }
 // YY is for the year of the century
 
@@ -29,7 +30,13 @@ var female = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
 
 function dow() {
   var formula =
-    (CC / 4 - 2 * CC - 1 + (5 * YY) / 4 + (26 * (MM + 1)) / 10 + DD) % 7;
+    (CC.slice(8) / 4 -
+      2 * CC.slice(8) -
+      1 +
+      (5 * YY.slice(8)) / 4 +
+      (26 * (MM.slice(3, 5) + 1)) / 10 +
+      DD.slice(0, 2)) %
+    7;
   // Date of Week equation
   alert(formula);
 }
