@@ -1,21 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="cs/style.css" type="text/css" />
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
     <script type="text/javascript" src="js/script.js"></script>
     <title>Akan Name App</title>
   </head>
   <body>
     <h1>Akan Name App</h1>
     <form id="myForm">
-      <fieldset>
-        <legend>Enter Your Date of Birth</legend>
+      <fieldset class="fixfieldset reset">
+        <legend class="fixlegend">Enter Your Date of Birth</legend>
         <label for="dob">Date of Birth</label>
         <br />
         <input
@@ -27,14 +22,15 @@
         />
       </fieldset>
       <br />
-      <fieldset>
-        <legend>Choose Your Gender</legend>
+      <fieldset class="fixfieldset reset">
+        <legend class="fixlegend">Choose Your Gender</legend>
         <input type="radio" name="gender" id="male" value="male" required />
         <label for="male">Male</label>
         <input type="radio" name="gender" id="female" value="female" />
         <label for="female">Female</label>
       </fieldset>
       <br />
+      <br>
       <button type="button" id="submit" onclick="akan()">
         Submit
       </button>

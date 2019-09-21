@@ -1,0 +1,10 @@
+.reset {
+  all: initial;
+}
+.fixfieldset{
+  border: 1px solid;
+  padding: 10px;
+}
+.fixlegend{
+  color: black;
+}
