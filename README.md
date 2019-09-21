@@ -1,4 +1,4 @@
-# Portfolio Landing Page
+# Akan Name App
 
 #### This website is an Akan Name App, 16/09/2019
 
