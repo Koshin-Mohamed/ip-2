@@ -90,4 +90,6 @@ function akan() {
   } else {
     alert("Please select a gender");
   }
+
+  var clearForm = document.getElementById("myForm").reset();
 }
