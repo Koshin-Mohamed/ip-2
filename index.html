@@ -1,39 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
     <script type="text/javascript" src="js/script.js"></script>
     <title>Akan Name App</title>
   </head>
-  <body>
-    <h1>Akan Name App</h1>
-    <form id="myForm">
-      <fieldset class="fixfieldset reset">
-        <legend class="fixlegend">Enter Your Date of Birth</legend>
-        <label for="dob">Date of Birth</label>
-        <br />
-        <input
-          type="text"
-          name="dob"
-          id="dob"
-          placeholder="DD/MM/YYYY"
-          required
-        />
-      </fieldset>
-      <br />
-      <fieldset class="fixfieldset reset">
-        <legend class="fixlegend">Choose Your Gender</legend>
-        <input type="radio" name="gender" id="male" value="male" required />
-        <label for="male">Male</label>
-        <input type="radio" name="gender" id="female" value="female" />
-        <label for="female">Female</label>
-      </fieldset>
-      <br />
-      <br>
-      <button type="button" id="submit" onclick="akan()">
-        Submit
-      </button>
-    </form>
+  <body class="container">
+    <h1 class="jumbotron">Akan Name App</h1>
+    <div class="row">
+      <div class="col-md-6" class="card">
+        <h4>What are Akan names</h4>
+        <p>
+          Akan names are used in Ghanian culture and are based on gender and
+          date of birth. The children's names are asssigned once the gender is known as
+          well as the day of the week they are born. This is refered to as a "Day Name."
+        </p>
+        <h4>Instructions</h4>
+        <p><ol>
+          <li>Insert date in this format DD/MM/YYYY</li>
+          <li>Choose Gender</li>
+          <li></li>
+        </ol></p>
+      </div>
+      <div class="col-md-6">
+        <form id="myForm" class="card">
+          <fieldset>
+            <legend>Enter Your Date of Birth</legend>
+            <label for="dob">Date of Birth</label>
+            <br />
+            <input
+              type="text"
+              name="dob"
+              id="dob"
+              placeholder="DD/MM/YYYY"
+              required
+            />
+          </fieldset>
+          <br />
+          <fieldset>
+            <legend>Choose Your Gender</legend>
+            <input type="radio" name="gender" id="male" value="male" required />
+            <label for="male" class="gender">Male</label>
+            <input type="radio" name="gender" id="female" value="female" />
+            <label for="female" class="gender">Female</label>
+          </fieldset>
+          <br />
+          <button type="button" id="submit" onclick="akan()">
+            Submit
+          </button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>

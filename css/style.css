@@ -1,10 +1,14 @@
-.reset {
-  all: initial;
+fieldset {
+  width: 300px;
+  margin: auto;
 }
-.fixfieldset{
-  border: 1px solid;
-  padding: 10px;
+legend {
+  font-weight: bold;
+  
 }
-.fixlegend{
-  color: black;
+.gender {
+  padding: 0 10px;
+}
+#dob {
+  width: 120px;
 }
