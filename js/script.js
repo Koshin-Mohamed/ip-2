@@ -23,7 +23,7 @@ function getYY() {
 }
 
 // Date of Week function
-function dow() {
+function dayOfWeek() {
   var formula =
     (getCC() / 4 -
       2 * getCC() -
@@ -45,8 +45,50 @@ function akan() {
 
   var maleName = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
   var femaleName = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
-
-  if ((dow(0)) && male.checked == true) {
-    alert("Your Akan name is " + maleName[0] + "!")
+  
+  if ((dayOfWeek() == 0) && male.checked == true) {
+    alert("Your Akan name is " + maleName[0] + "!");
+  }
+  else if ((dayOfWeek() == 1) && male.checked == true) {
+    alert("Your Akan name is " + maleName[1] + "!");
+  }
+  else if ((dayOfWeek() == 2) && male.checked == true) {
+    alert("Your Akan name is " + maleName[2] + "!")
+  }
+  else if ((dayOfWeek() == 3) && male.checked == true) {
+    alert("Your Akan name is " + maleName[3] + "!");
+  }
+  else if ((dayOfWeek() == 4) && male.checked == true) {
+    alert("Your Akan name is " + maleName[4] + "!");
+  }
+  else if ((dayOfWeek() == 5) && male.checked == true) {
+    alert("Your Akan name is " + maleName[5] + "!");
+  }
+  else if ((dayOfWeek() == 6) && male.checked == true) {
+    alert("Your Akan name is " + maleName[6] + "!");
+  }
+  else if ((dayOfWeek() == 0) && female.checked == true) {
+    alert("Your Akan name is " + femaleName[0] + "!");
+  }
+  else if ((dayOfWeek() == 1) && female.checked == true) {
+    alert("Your Akan name is " + femaleName[1] + "!");
+  }
+  else if ((dayOfWeek() == 2) && female.checked == true) {
+    alert("Your Akan name is " + femaleName[2] + "!");
+  }
+  else if ((dayOfWeek() == 3) && female.checked == true) {
+    alert("Your Akan name is " + femaleName[3] + "!");
+  }
+  else if ((dayOfWeek() == 4) && female.checked == true) {
+    alert("Your Akan name is " + femaleName[4] + "!");
+  }
+  else if ((dayOfWeek() == 5) && female.checked == true) {
+    alert("Your Akan name is " + femaleName[5] + "!");
+  }
+  else if ((dayOfWeek() == 6) && female.checked == true) {
+    alert("Your Akan name is " + femaleName[6] + "!");
+  }
+  else {
+    alert("Please select a gender");
   }
 }
