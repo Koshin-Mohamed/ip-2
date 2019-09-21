@@ -18,10 +18,11 @@ p {
 }
 h1 {
   text-align: center;
+  font-family: 'Bungee Inline', cursive;
+  font-size: 100px
 }
 .jumbotron {
   background-color: rgb(224, 0, 0);
-  color: white;
 }
 .container {
   margin-top: 20px;
