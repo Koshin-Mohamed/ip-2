@@ -31,6 +31,7 @@ h3 {
 }
 .jumbotron {
   background-color: rgb(224, 0, 0);
+  margin-left: -17px;
 }
 .container {
   margin-top: 20px;
