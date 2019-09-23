@@ -1,6 +1,6 @@
 # Akan Name App
 
-#### This website is an Akan Name App, 16/09/2019
+#### This website is an Akan Name App, 21/09/2019
 
 #### By **Koshin Mohamed**
 
