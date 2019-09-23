@@ -3,7 +3,10 @@
   <head>
     <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
     <link rel="stylesheet" href="css/style.css" type="text/css" />
-    <link href="https://fonts.googleapis.com/css?family=Bungee+Inline&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=Bungee+Inline&display=swap"
+      rel="stylesheet"
+    />
     <script type="text/javascript" src="js/script.js"></script>
     <title>Akan Name App</title>
   </head>
@@ -14,20 +17,49 @@
         <h4>What are Akan names</h4>
         <p>
           Akan names are used in Ghanian culture and are based on gender and
-          date of birth. The children's names are asssigned once the gender is known as
-          well as the day of the week they are born. This is refered to as a "Day Name."
+          date of birth. The children's names are asssigned once the gender is
+          known as well as the day of the week they are born. This is refered to
+          as a "Day Name."
         </p>
-        <br>
+        <div class="row names">
+          <div class="col-md-6">
+            <h4>Male</h4>
+            <p>
+              <strong>Sunday:</strong> Kwasi <br />
+              <strong>Monday:</strong> Kwadwo <br />
+              <strong>Tuesday:</strong> Kwabena <br />
+              <strong>Wednesday:</strong> Kwaku <br />
+              <strong>Thursday:</strong> Yaw <br />
+              <strong>Friday:</strong> Kofi <br />
+              <strong>Saturday:</strong> Kwame
+            </p>
+          </div>
+          <div class="col-md-6">
+            <h4>Female</h4>
+            <p>
+              <strong>Sunday:</strong> Akosua <br />
+              <strong>Monday:</strong> Adwoa <br />
+              <strong>Tuesday:</strong> Abenaa <br />
+              <strong>Wednesday:</strong> Akua <br />
+              <strong>Thursday:</strong> Yaa <br />
+              <strong>Friday:</strong> Afua <br />
+              <strong>Saturday:</strong> Ama
+            </p>
+          </div>
+        </div>
+        <br />
         <h4>Instructions</h4>
-        <p><ol>
-          <li>Insert date in this format DD/MM/YYYY</li>
-          <li>Choose gender</li>
-          <li>Push submit button</li>
-        </ol></p>
+        <div>
+          <ol>
+            <li>Insert date in this format DD/MM/YYYY</li>
+            <li>Choose gender</li>
+            <li>Push submit button</li>
+          </ol>
+        </div>
       </div>
       <div class="col-md-6">
         <form id="myForm" class="card form">
-          <fieldset>
+          <fieldset class="date">
             <legend>Enter Your Date of Birth</legend>
             <label for="dob">Date of Birth</label>
             <br />
@@ -40,7 +72,7 @@
             />
           </fieldset>
           <br />
-          <fieldset>
+          <fieldset class="sex">
             <legend>Choose Your Gender</legend>
             <input type="radio" name="gender" id="male" value="male" required />
             <label for="male" class="gender">Male</label>

@@ -13,6 +13,7 @@ legend {
 #dob {
   width: 120px;
   text-align: center;
+  margin-bottom: 10px;
 }
 label {
   font-size: 20px;
@@ -43,11 +44,11 @@ h3 {
   background-color: rgb(255, 212, 0);
   border-radius: 5px;
   padding: 40px 40px 10px 40px;
-  
 }
 .form {
   background-color: rgb(0, 114, 62);
-  padding: 30px 20px;
+  padding: 40px 20px;
+  height: 605px;
 }
 body {
   background-color: black;
@@ -59,4 +60,14 @@ body {
   color: white;
   border-color: black;
   padding: 5px 10px;
+}
+.names {
+  text-align: ;
+  margin-top: 10px;
+}
+.date {
+  margin-bottom: 30px;
+}
+.sex {
+  margin-bottom: 30px;
 }
